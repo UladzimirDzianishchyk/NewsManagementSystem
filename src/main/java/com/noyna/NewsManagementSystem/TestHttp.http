@@ -1,0 +1,35 @@
+POST http://localhost:8080/news
+Content-Type: application/json
+
+{
+  "title": "test",
+  "text": "test news"
+}
+###
+
+GET http://localhost:8080/news/show
+Content-Type: application/json
+
+{
+  "title": "test"
+}
+
+###
+GET http://localhost:8080/news/1
+
+###
+
+
+POST http://localhost:8080/comment/1
+Content-Type: application/json
+
+{
+  "text": "test comment",
+  "userName": "test user"
+}
+
+###
+
+GET http://localhost:8080/comment/1
+
+###
